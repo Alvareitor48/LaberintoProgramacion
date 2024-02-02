@@ -1,7 +1,7 @@
 package Classes;
 
 public class Config {
-	public static double VERSION = 0.1;
+	public static double VERSION = 0.2;
 	public static String WELCOME = "Bienvenido al programa del laberinto, vas a flipar, selecciona una opcion guapeton: ";
 	public static String GOODBYE = "Muchas gracias por usar el programa, ayps";
 	public static String SOON = "Proximamente...";

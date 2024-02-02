@@ -7,6 +7,7 @@
 	import Classes.*;
 public class Main {
 	public static Session SessionObject = new Session();
+	public static Maze MazeObject = new Maze();
 	public static int decision = 0;
 	public static void main(String[] args) {
 		System.out.println(Config.WELCOME);
@@ -53,13 +54,16 @@ public class Main {
 			decision = Input.getInt("\n\n"+Config.LOGGED_MENU, true);
 			switch(decision) {
 				case 1:
-					System.out.println(Config.SOON);
+					MazeObject.loadMaze();
+					Input.toContinue();
 					break;
 				case 2:
-					System.out.println(Config.SOON);
+					MazeObject.showMaze();
+					Input.toContinue();
 					break;
 				case 3:
-					System.out.println(Config.SOON);
+					MazeObject.setStartEnd();
+					Input.toContinue();
 					break;
 				case 4:
 					System.out.println(Config.SOON);

@@ -110,10 +110,10 @@ public class Session {
 		
 		password = Input.getString("Contraseña: ");
 		name = Input.getString("Nombre Completo: ");
-		nif = Input.getString("NIF: ");
-		email = Input.getString("Email: ");
+		nif = Input.getNIF("NIF: ");
+		email = Input.getEmail("Email: ");
 		address = Input.getString("Direccion: ");
-		birthdate = Input.getString("Fecha de nacimiento: ");
+		birthdate = Input.getDate("Fecha de nacimiento: ");
 		try {
 			//Aqui es cuando se escribe en el txt
 			writer = new FileWriter(file,true);//El FileWriter selecciona el archivo File, y con el true hace que lo escriba al final
